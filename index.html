@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jitendra Gautam</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- AOS Library -->
+  
+<!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 
 </head>
@@ -19,44 +21,42 @@
     </nav>
   </header>
 
-<section class="hero fade-in">
+<section class="hero" data-aos="fade-up">
   <img src="profile.jpg" alt="Jitendra Gautam" class="profile-pic" />
   <h2>Hello, I'm Jitendra 👋</h2>
   <p>A developer passionate about building for the web.</p>
 </section>
 
 
+  <section id="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <p>I'm a software developer who enjoys creating impactful digital experiences...</p>
+</section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a software developer who enjoys creating simple, clean, and impactful digital experiences. I work with web technologies like HTML, CSS, JavaScript, and frameworks like React.
-    </p>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Portfolio Website:</strong> This very site, showcasing my skills and work.
-      </li>
-      <li>
-        <strong>Task Tracker App:</strong> A React app to manage daily to-dos and projects.
-      </li>
-      <li>
-        <strong>Weather Dashboard:</strong> A weather app using OpenWeather API and JavaScript.
-      </li>
-    </ul>
-  </section>
+  <<section id="projects" data-aos="zoom-in">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Portfolio Website:</strong> This very site.</li>
+    <li><strong>Task Tracker:</strong> A React-based to-do manager.</li>
+  </ul>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:jitendra@example.com">jitendra@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/jitendra2015" target="_blank">jitendra2015</a></p>
-  </section>
+
+  <section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:jitendra@example.com">jitendra@example.com</a></p>
+</section>
+
 
   <footer>
     <p>© 2025 Jitendra Gautam</p>
   </footer>
+  <!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
