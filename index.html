@@ -13,6 +13,8 @@
 </head>
 <body>
   <header>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
     <h1>Jitendra Gautam</h1>
     <nav>
       <a href="#about">About</a>
@@ -75,6 +77,13 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+  });
 </script>
 
 </body>
